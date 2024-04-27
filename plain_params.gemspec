@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'plain_params'
-  s.version       = '0.0.1'
+  s.version       = '0.0.2'
   s.date          = '2024-04-25'
   s.platform      = Gem::Platform::RUBY
   s.summary       = 'No ActiveRecord or Dry-Validation, just plain parameters.'
@@ -13,6 +13,5 @@ Gem::Specification.new do |s|
   s.homepage      = 'https://github.com/gedean/plain_params'
   s.license       = 'MIT'
   s.add_dependency 'activemodel', '~> 7.1'
-  s.add_dependency 'json', '~> 2.7'
   s.post_install_message = %q{Please check readme file for use instructions.}
 end

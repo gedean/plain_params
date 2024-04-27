@@ -29,8 +29,6 @@ class PlainParams
   def real_values = values[:real]
   def virtual_values = values[:virtual]
 
-  #def json_values = Oj.dump(values, mode: :compat)
-  #def json_values = Oj.dump(values, mode: :compat)
   def persisted? = false
 
   private
