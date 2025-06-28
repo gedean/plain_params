@@ -2,7 +2,11 @@ require_relative '../../lib/plain_params'
 
 class PersonParams < PlainParams
   @real_fields = %i[name age]
-  #@virtual_fields = %i[city]
+  @virtual_fields = %i[age_group]
 
-  validates_presence_of :name, :age
+  def age_group
+    return :child if age < 18
+    return :adult if age < 65
+    :senior
+  end
 end
